@@ -121,6 +121,16 @@ function startOver() {
 
 
 
-document.body.addEventListener('click', function() {
-  document.querySelector('input').focus();
+// document.body.addEventListener('click', function() {
+//   document.querySelector('input').focus();
+// });
+
+
+$(document).on('touchstart', function() {
+  var $inputElement = $('input:first');
+  
+  if ($inputElement.length > 0) {
+      
+    $inputElement.focus();
+  }
 });
