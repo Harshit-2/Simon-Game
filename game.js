@@ -118,3 +118,9 @@ function startOver() {
     gamePattern = [];
     started = false;
 }
+
+
+
+document.body.addEventListener('click', function() {
+  document.querySelector('input').focus();
+});
